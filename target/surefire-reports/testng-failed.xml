@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test thread-count="5" verbose="0" name="Test(failed)">
+    <parameter name="ReportName" value="Regression Report"/>
+    <parameter name="buildName" value="RC1.0.13"/>
+    <parameter name="environment" value="qa"/>
+    <parameter name="ProjectName" value="Test Project"/>
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.HMS.TestCases.HMSTestCases">
+        <methods>
+          <include name="getResult"/>
+          <include name="HMSLogin"/>
+          <include name="HMSLogout"/>
+          <include name="GeneratingReportLogs"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.HMS.TestCases.HMSTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
